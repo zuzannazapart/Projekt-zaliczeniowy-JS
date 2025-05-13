@@ -1,19 +1,25 @@
-# Platfroma do zakupu luksusowych samochodów - projekt zaliczeniowy JS
-# Strona oferuje: 
-- przeglądanie dostępnych modeli samochodów
-- formularz zamówienia z danymi do uzupełnienia
-- kalkulację cen
-- system walidacji danych
-- podgląd podsumowania zamówienia
-- localStorage zapisujacy uzupełnione dane
-- generowanie terminów dostaw
+# Luxury Car Purchase Platform - JS Final Project
+# Website features: 
+- Browsing available car models
+- Order form with fields to fill out
+- Price calculation
+- Data validation system
+- Order summary preview
+- localStorage for saving entered data
+- Delivery date generation
 
-# Technologie: HTML5, CSS3, JavaScript
+# Technologies used: HTML5, CSS3, JavaScript
 
-# Instalacja i uruchomienie:
+# Installation & Setup:
 
 ```bash
-git clone
+git clone https://github.com/zuzannazapart/Projekt-zaliczeniowy-JS.git
+
+or download the ZIP file by clicking <Code>
+
+Open the code in Visual Studio Code
+Use the Live Server extension to run the project
+
 
 
 
