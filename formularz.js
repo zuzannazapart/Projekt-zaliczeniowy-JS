@@ -91,7 +91,6 @@ function createDeliveryDates() {
     select.appendChild(option);
   }
 
-  // Przywrócenie wybranej daty
   const savedDate = localStorage.getItem("formDeliveryDate");
   if (savedDate) {
     select.value = savedDate;
