@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+h2 {
+  font-size: 42px;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 36px;
+  color: rgb(63, 114, 255);
+  font-family: "Montserrat";
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 40px;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+  line-height: 24px;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+body {
+  width: 100%;
+}
+
+.imageBox {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.customImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlayText {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 64px;
+  line-height: 80px;
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+.overlayTextSmaller {
+    position: absolute;
+  top: 200px;
+  left: 36px;
+  color: rgb(63, 114, 255);
+  padding: 5px 10px;
+  font-size: 42px;
+  line-height: 80px;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.titleHomepage {
+  text-align: center;
+  margin: 42px 0px 42px 0px
+;
+}
+
+.searchContainer {
+  margin: 20px auto;
+  max-width: 600px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid rgb(63, 114, 255);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.searchButton {
+  padding: 8px 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.searchButton:hover {
+  background-color: rgb(63, 114, 255);
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 32px;        
+    justify-content: center; 
+    padding: 24px;}
+
+.carCard {
+  background: #ffffff;
+  border-radius: 24px;
+  border: 6px solid #000000;
+  padding: 16px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.carCard img {
+  width: auto;
+  height: 250px;
+  object-fit: cover;
+  margin: 16px 0;
+  border-radius: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+.hiddenCard {
+  display: none
+}

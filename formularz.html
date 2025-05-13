@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularz zakupu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="formularz.css" />
+    <script defer src="formularz.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="thanksPage" class="hidden">
+        <img id="summaryCarPhoto" src="" alt="Zdjęcie samochodu" />
+        <p>Dziękujemy za zakup <span id="carName">X</span></p>
+        <p>Auto zostanie dostarczone <span id="carAdress">X</span></p>
+        <p>Metoda płatności: <span id="paymentMethod">X</span></p>
+        <p>Cena końcowa: <span id="finalPrice">X zł</span></p>
+      </div>
+      <div id="formPage">
+    <h2>Formularz zakupu auta</h2>
+    <section class="configForm">
+        <div class="selectedCarBanner">
+            <h3 id="selectedCarModel">Wybrany model:</h3>
+          </div>
+      <h3>Finansowanie</h3>
+    <div class="finanseType">
+        
+        <p>
+          <label><input type="radio" name="finansowanie" value="leasing" />
+            Leasing</label
+          >
+          <label
+            ><input type="radio" name="finansowanie" value="gotówka" />
+            Gotówka</label
+          >
+        </p>
+    </div>
+    <label for="name">Imię i nazwisko:</label>
+    <input type="text" id="name" name="name" placeholder="np. Jan Kowalski" />
+    
+    <label for="pickupLocation">Miejsce odbioru:</label>
+    <input type="text" id="pickupLocation" name="pickupLocation" placeholder="np. Warszawa, ul. Marszałkowska 1" />
+    
+    <label for="deliveryDate">Data dostawy:</label>
+    <select id="deliveryDate" name="deliveryDate"></select>
+    
+        <h3>Akcesoria</h3>
+        <div class="carAccessory">
+        <p>
+          <label
+            ><input
+              type="checkbox"
+              class="accessory"
+              value="6000"
+              data-id="1"
+            />
+            Kamera cofania (6 000 zł)</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              class="accessory"
+              value="10000"
+              data-id="2"
+            />
+            System audio premium (10 000 zł)</label
+          ><br />
+          <label
+            ><input type="checkbox" class="accessory" value="12000" data-id="3" />
+            Zestaw opon zimowych (12 000 zł)</label
+          ><br />
+        </p>
+    </div>
+    <div class="totalPrice">
+        <p>
+          <h3>Cena całkowita:</h3> 
+          <span id="totalPrice">0 zł</span>
+        </p>
+    </div>
+    <p id="formError"></p>
+        <button id="buyCar" type="button" class="button">Zakup</button>
+        <button id="goBack" class="button">Powrót do wyboru</button>
+
+      </form>
+    </section>
+</div>
+  </body>
+</html>
